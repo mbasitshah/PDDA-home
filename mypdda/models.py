@@ -16,4 +16,4 @@ class Medicines(models.Model):
 
 class Precautions(models.Model):
 	Id = models.integerField(max_length = 20, null=True)
-	Name = models.charField(max_length = 200, null = True)
+	Name = models.charField(max_leingth = 200, null = True)

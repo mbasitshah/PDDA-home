@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from mypdda import views
+
 urlpatterns = [
-    path('', include('mypdda.urls')),
-    path('', include('home.urls')),
-    path('', include('gallery.urls')),
+    path('', views.home),
     path('admin/', admin.site.urls),
 ]

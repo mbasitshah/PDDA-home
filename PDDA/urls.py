@@ -20,5 +20,11 @@ from mypdda import views
 
 urlpatterns = [
     path('', views.home),
+    path('results', views.results),
+    path('SavedResults', views.savedresults),
+    path('gallery', views.gallery),
+    path('Diseases', views.diseases),
+    path('About', views.about),
+    path('Help', views.help),
     path('admin/', admin.site.urls),
 ]

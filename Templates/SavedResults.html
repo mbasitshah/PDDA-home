@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SavedResults</title>
+<title>results</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: SavedResults;
-		--web-view-id: SavedResults;
+		--web-view-name: results;
+		--web-view-id: results;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: SavedResults;
+		--web-view-ids: results;
 	}
 	* {
 		margin: 0;
@@ -21,405 +21,543 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#SavedResults {
+	#results {
 		position: absolute;
-		width: 1080px;
-		height: 1606px;
-		background-color: rgba(255,255,255,1);
+		width: 1365px;
+		height: 666px;
+		background-color: rgba(246,246,246,1);
 		overflow: hidden;
-		--web-view-name: SavedResults;
-		--web-view-id: SavedResults;
+		--web-view-name: results;
+		--web-view-id: results;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	@keyframes fadein {
-	
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	
-	}
 	#Rectangle_1 {
-		fill: rgba(236,236,236,1);
+		fill: rgba(255,255,255,1);
 	}
 	.Rectangle_1 {
+		filter: drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.161));
 		position: absolute;
 		overflow: visible;
-		width: 1095px;
-		height: 1616px;
-		left: -10px;
-		top: -3px;
+		width: 490px;
+		height: 708px;
+		left: 138px;
+		top: 0px;
+	}
+	#Logo-01 {
+		position: absolute;
+		width: 281px;
+		height: 119px;
+		left: 225.369px;
+		top: 29px;
+		overflow: visible;
+	}
+	#Line_1 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 382px;
+		height: 1px;
+		left: 171.75px;
+		top: 197.785px;
+		transform: matrix(1,0,0,1,0,0);
 	}
 	#Rectangle_3 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(26,73,73,1);
 	}
 	.Rectangle_3 {
 		position: absolute;
 		overflow: visible;
-		width: 1022px;
-		height: 894px;
-		left: 29px;
-		top: 707px;
+		width: 125px;
+		height: 30px;
+		left: 207px;
+		top: 573px;
 	}
-	#Rectangle_23 {
-		fill: rgba(255,255,255,1);
+	#Rectangle_15 {
+		fill: rgba(26,73,73,1);
 	}
-	.Rectangle_23 {
+	.Rectangle_15 {
 		position: absolute;
 		overflow: visible;
-		width: 221px;
-		height: 133px;
-		left: 29px;
-		top: 649px;
+		width: 125px;
+		height: 30px;
+		left: 392px;
+		top: 573px;
 	}
-	#Logo-01 {
-		position: absolute;
-		width: 379px;
-		height: 161px;
-		left: 371px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Results {
-		left: 94px;
-		top: 673px;
+	#Save {
+		left: 253px;
+		top: 579.5px;
 		position: absolute;
 		overflow: visible;
-		width: 88px;
+		width: 34px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -68px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
-		color: rgba(159,159,159,1);
+		font-size: 14px;
+		color: rgba(255,255,255,1);
 	}
-	#Plant_Name {
-		left: 323px;
-		top: 786px;
+	#Done {
+		left: 438px;
+		top: 579.5px;
 		position: absolute;
 		overflow: visible;
-		width: 106px;
+		width: 36px;
 		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
+		font-size: 14px;
+		color: rgba(255,255,255,1);
 	}
-	#Plant_Name_s {
-		left: 323px;
-		top: 951px;
+	#Back {
+		left: 155px;
+		top: 10px;
 		position: absolute;
 		overflow: visible;
-		width: 106px;
+		width: 38px;
 		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
+		line-height: 133px;
+		margin-top: -58.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_t {
-		left: 323px;
-		top: 1115px;
-		position: absolute;
-		overflow: visible;
-		width: 106px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_u {
-		left: 323px;
-		top: 1279px;
-		position: absolute;
-		overflow: visible;
-		width: 106px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_v {
-		left: 323px;
-		top: 1421px;
-		position: absolute;
-		overflow: visible;
-		width: 106px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_w {
-		left: 323px;
-		top: 835px;
-		position: absolute;
-		overflow: visible;
-		width: 92px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_x {
-		left: 323px;
-		top: 999px;
-		position: absolute;
-		overflow: visible;
-		width: 92px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_y {
-		left: 323px;
-		top: 1163px;
-		position: absolute;
-		overflow: visible;
-		width: 92px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Plant_Name_z {
-		left: 323px;
-		top: 1328px;
-		position: absolute;
-		overflow: visible;
-		width: 92px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
+		font-size: 16px;
+		color: rgba(26,73,73,1);
+		text-decoration: underline;
 	}
 	#Plant_Name_ {
-		left: 323px;
-		top: 1470px;
+		left: 156px;
+		top: 233px;
 		position: absolute;
 		overflow: visible;
-		width: 92px;
+		width: 106px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,48,48,1);
+	}
+	#All_Results {
+		left: 889px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(48,48,48,1);
+	}
+	#Condition_ {
+		left: 156px;
+		top: 288px;
+		position: absolute;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,48,48,1);
+	}
+	#Disease_Name_ {
+		left: 156px;
+		top: 343px;
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,48,48,1);
+	}
+	#Medicine_ {
+		left: 156px;
+		top: 398px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,48,48,1);
+	}
+	#Precautions_ {
+		left: 156px;
+		top: 453px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(48,48,48,1);
+	}
+	#Dummy_name {
+		left: 307px;
+		top: 235px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -0.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 15px;
+		color: rgba(48,48,48,1);
+	}
+	#Healthy__Not_Healthy {
+		left: 307px;
+		top: 290px;
+		position: absolute;
+		overflow: visible;
+		width: 152px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -0.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(48,48,48,1);
+	}
+	#Lorem_Ipsum {
+		left: 307px;
+		top: 345px;
+		position: absolute;
+		overflow: visible;
+		width: 92px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -0.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(48,48,48,1);
+	}
+	#Lorem_Ipsum_Dummy_Medicine_ {
+		left: 307px;
+		top: 400px;
+		position: absolute;
+		overflow: visible;
+		width: 226px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -0.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(48,48,48,1);
+	}
+	#In_publishing_and_graphic_desi {
+		left: 307px;
+		top: 456px;
+		position: absolute;
+		overflow: visible;
+		width: 264px;
+		white-space: nowrap;
+		line-height: 16px;
+		margin-top: -1px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(48,48,48,1);
+	}
+	#Plant_Name {
+		left: 799px;
+		top: 138px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_ba {
+		left: 799px;
+		top: 263.024px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_bb {
+		left: 799px;
+		top: 388.047px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_bc {
+		left: 799px;
+		top: 513.071px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_bd {
+		left: 799px;
+		top: 170px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 94px;
+		margin-top: -42px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_be {
+		left: 799px;
+		top: 295.024px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 94px;
+		margin-top: -42px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_bf {
+		left: 799px;
+		top: 420.047px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 94px;
+		margin-top: -42px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(101,101,101,1);
+	}
+	#Plant_Name_bg {
+		left: 799px;
+		top: 545.071px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		line-height: 94px;
+		margin-top: -42px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition {
-		left: 470px;
-		top: 786px;
+		left: 893px;
+		top: 138px;
 		position: absolute;
 		overflow: visible;
-		width: 90px;
+		width: 57px;
 		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
+		line-height: 102px;
+		margin-top: -45px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Condition_ {
-		left: 470px;
-		top: 951px;
-		position: absolute;
-		overflow: visible;
-		width: 90px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Condition_ba {
-		left: 470px;
-		top: 1115px;
-		position: absolute;
-		overflow: visible;
-		width: 90px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Condition_bb {
-		left: 470px;
-		top: 1279px;
-		position: absolute;
-		overflow: visible;
-		width: 90px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Condition_bc {
-		left: 470px;
-		top: 1421px;
-		position: absolute;
-		overflow: visible;
-		width: 90px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
+		font-size: 12px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition_bd {
-		left: 470px;
-		top: 835px;
+		left: 893px;
+		top: 263.024px;
 		position: absolute;
 		overflow: visible;
-		width: 77px;
+		width: 57px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		line-height: 102px;
+		margin-top: -45px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 12px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition_be {
-		left: 470px;
-		top: 999px;
+		left: 893px;
+		top: 388.047px;
 		position: absolute;
 		overflow: visible;
-		width: 77px;
+		width: 57px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		line-height: 102px;
+		margin-top: -45px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 12px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition_bf {
-		left: 470px;
-		top: 1163px;
+		left: 893px;
+		top: 513.071px;
 		position: absolute;
 		overflow: visible;
-		width: 77px;
+		width: 57px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		line-height: 102px;
+		margin-top: -45px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 12px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition_bg {
-		left: 470px;
-		top: 1328px;
+		left: 893px;
+		top: 170px;
 		position: absolute;
 		overflow: visible;
-		width: 77px;
+		width: 50px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		line-height: 104px;
+		margin-top: -46.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 11px;
 		color: rgba(101,101,101,1);
 	}
 	#Condition_bh {
-		left: 470px;
-		top: 1470px;
+		left: 893px;
+		top: 295.024px;
 		position: absolute;
 		overflow: visible;
-		width: 77px;
+		width: 50px;
 		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
+		line-height: 104px;
+		margin-top: -46.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 17px;
+		font-size: 11px;
 		color: rgba(101,101,101,1);
 	}
-	#Line_1 {
+	#Condition_bi {
+		left: 893px;
+		top: 420.047px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Condition_bj {
+		left: 893px;
+		top: 545.071px;
+		position: absolute;
+		overflow: visible;
+		width: 50px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Line_2 {
 		opacity: 0.58;
 		fill: transparent;
 		stroke: rgba(26,73,73,1);
@@ -429,13 +567,13 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Line_1 {
+	.Line_2 {
 		overflow: visible;
 		position: absolute;
-		width: 922.278px;
+		width: 591.124px;
 		height: 2px;
-		left: 78.861px;
-		top: 874.686px;
+		left: 649.438px;
+		top: 207.976px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Line_8 {
@@ -451,10 +589,10 @@
 	.Line_8 {
 		overflow: visible;
 		position: absolute;
-		width: 922.278px;
+		width: 591.124px;
 		height: 2px;
-		left: 78.861px;
-		top: 1039.04px;
+		left: 649.438px;
+		top: 333px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Line_9 {
@@ -470,10 +608,10 @@
 	.Line_9 {
 		overflow: visible;
 		position: absolute;
-		width: 922.278px;
+		width: 591.124px;
 		height: 2px;
-		left: 78.861px;
-		top: 1203.394px;
+		left: 649.438px;
+		top: 458.024px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Line_10 {
@@ -489,79 +627,14 @@
 	.Line_10 {
 		overflow: visible;
 		position: absolute;
-		width: 922.278px;
+		width: 591.124px;
 		height: 2px;
-		left: 78.861px;
-		top: 1367.748px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Line_11 {
-		opacity: 0.58;
-		fill: transparent;
-		stroke: rgba(26,73,73,1);
-		stroke-width: 2px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Line_11 {
-		overflow: visible;
-		position: absolute;
-		width: 922.278px;
-		height: 2px;
-		left: 78.861px;
-		top: 1509.742px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Mask_Group_2 {
-		position: absolute;
-		width: 1079px;
-		height: 377px;
-		left: 0px;
-		top: 176px;
-		overflow: visible;
-	}
-	#Back {
-		left: 52px;
-		top: 122px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: results.html;
-		cursor: pointer;
-		line-height: 225px;
-		margin-top: -99px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 27px;
-		color: rgba(40,168,109,1);
-	}
-	#Line_7 {
-		fill: transparent;
-		stroke: rgba(40,168,109,1);
-		stroke-width: 3px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Line_7 {
-		overflow: visible;
-		position: absolute;
-		width: 62.438px;
-		height: 3px;
-		left: 52.394px;
-		top: 156.894px;
+		left: 649.438px;
+		top: 583.047px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Ellipse_6 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(246,246,246,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
@@ -572,13 +645,13 @@
 	.Ellipse_6 {
 		position: absolute;
 		overflow: visible;
-		width: 116px;
-		height: 116px;
-		left: 90px;
-		top: 752px;
+		width: 74px;
+		height: 75px;
+		left: 650px;
+		top: 116px;
 	}
 	#Ellipse_7 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(246,246,246,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
@@ -589,13 +662,13 @@
 	.Ellipse_7 {
 		position: absolute;
 		overflow: visible;
-		width: 116px;
-		height: 116px;
-		left: 90px;
-		top: 916px;
+		width: 74px;
+		height: 75px;
+		left: 650px;
+		top: 241.024px;
 	}
 	#Ellipse_8 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(246,246,246,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
@@ -606,13 +679,13 @@
 	.Ellipse_8 {
 		position: absolute;
 		overflow: visible;
-		width: 116px;
-		height: 117px;
-		left: 90px;
-		top: 1080px;
+		width: 74px;
+		height: 75px;
+		left: 650px;
+		top: 366.047px;
 	}
 	#Ellipse_9 {
-		fill: rgba(255,255,255,1);
+		fill: rgba(246,246,246,1);
 		stroke: rgba(112,112,112,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
@@ -623,636 +696,451 @@
 	.Ellipse_9 {
 		position: absolute;
 		overflow: visible;
-		width: 116px;
-		height: 116px;
-		left: 90px;
-		top: 1244px;
-	}
-	#Ellipse_10 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Ellipse_10 {
-		position: absolute;
-		overflow: visible;
-		width: 116px;
-		height: 116px;
-		left: 90px;
-		top: 1386px;
-	}
-	#See_More {
-		left: 478px;
-		top: 1549px;
-		position: absolute;
-		overflow: visible;
-		width: 120px;
-		white-space: nowrap;
-		line-height: 225px;
-		margin-top: -99px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 27px;
-		color: rgba(40,168,109,1);
-	}
-	#Line_12 {
-		fill: transparent;
-		stroke: rgba(40,168,109,1);
-		stroke-width: 3px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Line_12 {
-		overflow: visible;
-		position: absolute;
-		width: 119.825px;
-		height: 3px;
-		left: 479.992px;
-		top: 1583.533px;
-		transform: matrix(1,0,0,1,0,0);
+		width: 74px;
+		height: 75px;
+		left: 650px;
+		top: 491.071px;
 	}
 	#image-gallery {
 		opacity: 0.36;
 		position: absolute;
-		width: 68px;
-		height: 67px;
-		left: 114px;
-		top: 778px;
-		overflow: visible;
-	}
-	#image-gallery_br {
-		opacity: 0.36;
-		position: absolute;
-		width: 68px;
-		height: 68px;
-		left: 114px;
-		top: 940px;
-		overflow: visible;
-	}
-	#image-gallery_bs {
-		opacity: 0.36;
-		position: absolute;
-		width: 68px;
-		height: 68px;
-		left: 114px;
-		top: 1105px;
+		width: 44px;
+		height: 44px;
+		left: 665px;
+		top: 133px;
 		overflow: visible;
 	}
 	#image-gallery_bt {
 		opacity: 0.36;
 		position: absolute;
-		width: 68px;
-		height: 68px;
-		left: 114px;
-		top: 1269px;
+		width: 44px;
+		height: 44px;
+		left: 665px;
+		top: 258.024px;
 		overflow: visible;
 	}
 	#image-gallery_bu {
 		opacity: 0.36;
 		position: absolute;
-		width: 68px;
-		height: 67px;
-		left: 114px;
-		top: 1411px;
+		width: 44px;
+		height: 44px;
+		left: 665px;
+		top: 383.047px;
 		overflow: visible;
 	}
-	#Rectangle_31 {
-		opacity: 0.12;
-		fill: rgba(26,73,73,1);
-		stroke: rgba(112,112,112,1);
+	#image-gallery_bv {
+		opacity: 0.36;
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		left: 665px;
+		top: 508.071px;
+		overflow: visible;
+	}
+	#Disease {
+		left: 988px;
+		top: 138px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_bx {
+		left: 988px;
+		top: 263.024px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_by {
+		left: 988px;
+		top: 388.047px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_bz {
+		left: 988px;
+		top: 513.071px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_b {
+		left: 988px;
+		top: 170px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_ca {
+		left: 988px;
+		top: 295.024px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_cb {
+		left: 988px;
+		top: 420.047px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Disease_cc {
+		left: 988px;
+		top: 545.071px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine {
+		left: 1082px;
+		top: 138px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_b {
+		left: 1082px;
+		top: 263.024px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_ca {
+		left: 1082px;
+		top: 388.047px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_cb {
+		left: 1082px;
+		top: 513.071px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 102px;
+		margin-top: -45px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_cc {
+		left: 1082px;
+		top: 170px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_cd {
+		left: 1082px;
+		top: 295.024px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_ce {
+		left: 1082px;
+		top: 420.047px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Medicine_cf {
+		left: 1082px;
+		top: 545.071px;
+		position: absolute;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 104px;
+		margin-top: -46.5px;
+		text-align: left;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(101,101,101,1);
+	}
+	#Rectangle_17 {
+		fill: transparent;
+		stroke: rgba(26,73,73,1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_31 {
+	.Rectangle_17 {
 		position: absolute;
 		overflow: visible;
-		width: 1079px;
-		height: 377px;
-		left: 6px;
-		top: 176px;
+		width: 55px;
+		height: 19px;
+		left: 1186px;
+		top: 154px;
 	}
-	#Disease {
-		left: 618px;
-		top: 786px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_bx {
-		left: 618px;
-		top: 951px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_by {
-		left: 618px;
-		top: 1115px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_bz {
-		left: 618px;
-		top: 1279px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_b {
-		left: 618px;
-		top: 1421px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_ca {
-		left: 618px;
-		top: 835px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_cb {
-		left: 618px;
-		top: 999px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_cc {
-		left: 618px;
-		top: 1163px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_cd {
-		left: 618px;
-		top: 1328px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Disease_ce {
-		left: 618px;
-		top: 1470px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Rectangle_24 {
-		fill: rgba(255,255,255,1);
-	}
-	.Rectangle_24 {
-		position: absolute;
-		overflow: visible;
-		width: 221px;
-		height: 133px;
-		left: 830px;
-		top: 649px;
-	}
-	#Medicine {
-		left: 765px;
-		top: 786px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_b {
-		left: 765px;
-		top: 951px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_ca {
-		left: 765px;
-		top: 1115px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_cb {
-		left: 765px;
-		top: 1279px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_cc {
-		left: 765px;
-		top: 1421px;
-		position: absolute;
-		overflow: visible;
-		width: 83px;
-		white-space: nowrap;
-		line-height: 162px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 19px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_cd {
-		left: 765px;
-		top: 835px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_ce {
-		left: 765px;
-		top: 999px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_cf {
-		left: 765px;
-		top: 1163px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_cg {
-		left: 765px;
-		top: 1328px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Medicine_ch {
-		left: 765px;
-		top: 1470px;
-		position: absolute;
-		overflow: visible;
-		width: 72px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -71.5px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 17px;
-		color: rgba(101,101,101,1);
-	}
-	#Saved_Results {
-		left: 855px;
-		top: 673px;
-		position: absolute;
-		overflow: visible;
-		width: 164px;
-		white-space: nowrap;
-		line-height: 160px;
-		margin-top: -68px;
-		text-align: left;
-		font-family: Rubik;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(40,168,109,1);
-	}
-	#Rectangle_26 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(40,168,109,1);
-		stroke-width: 2px;
+	#Rectangle_18 {
+		fill: transparent;
+		stroke: rgba(26,73,73,1);
+		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_26 {
+	.Rectangle_18 {
 		position: absolute;
 		overflow: visible;
-		width: 87px;
-		height: 31px;
-		left: 914px;
-		top: 810px;
+		width: 55px;
+		height: 19px;
+		left: 1186px;
+		top: 279.024px;
 	}
-	#Rectangle_27 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(40,168,109,1);
-		stroke-width: 2px;
+	#Rectangle_19 {
+		fill: transparent;
+		stroke: rgba(26,73,73,1);
+		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_27 {
+	.Rectangle_19 {
 		position: absolute;
 		overflow: visible;
-		width: 87px;
-		height: 32px;
-		left: 914px;
-		top: 974px;
+		width: 55px;
+		height: 19px;
+		left: 1186px;
+		top: 404.047px;
 	}
-	#Rectangle_28 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(40,168,109,1);
-		stroke-width: 2px;
+	#Rectangle_20 {
+		fill: transparent;
+		stroke: rgba(26,73,73,1);
+		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_28 {
+	.Rectangle_20 {
 		position: absolute;
 		overflow: visible;
-		width: 87px;
-		height: 31px;
-		left: 914px;
-		top: 1139px;
-	}
-	#Rectangle_29 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(40,168,109,1);
-		stroke-width: 2px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_29 {
-		position: absolute;
-		overflow: visible;
-		width: 87px;
-		height: 33px;
-		left: 914px;
-		top: 1302px;
-	}
-	#Rectangle_30 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(40,168,109,1);
-		stroke-width: 2px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_30 {
-		position: absolute;
-		overflow: visible;
-		width: 87px;
-		height: 33px;
-		left: 914px;
-		top: 1444px;
+		width: 55px;
+		height: 19px;
+		left: 1186px;
+		top: 529.071px;
 	}
 	#Details {
-		left: 935px;
-		top: 818px;
+		left: 1199px;
+		top: 159px;
 		position: absolute;
 		overflow: visible;
-		width: 42px;
+		width: 28px;
 		white-space: nowrap;
-		line-height: 156px;
-		margin-top: -71.5px;
+		line-height: 96px;
+		margin-top: -44px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 13px;
-		color: rgba(40,168,109,1);
+		font-size: 8px;
+		color: rgba(26,73,73,1);
 	}
-	#Details_co {
-		left: 935px;
-		top: 981px;
+	#Details_ch {
+		left: 1199px;
+		top: 284.024px;
 		position: absolute;
 		overflow: visible;
-		width: 42px;
+		width: 28px;
 		white-space: nowrap;
-		line-height: 156px;
-		margin-top: -71.5px;
+		line-height: 96px;
+		margin-top: -44px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 13px;
-		color: rgba(40,168,109,1);
+		font-size: 8px;
+		color: rgba(26,73,73,1);
 	}
-	#Details_cp {
-		left: 935px;
-		top: 1146px;
+	#Details_ci {
+		left: 1199px;
+		top: 409.047px;
 		position: absolute;
 		overflow: visible;
-		width: 42px;
+		width: 28px;
 		white-space: nowrap;
-		line-height: 156px;
-		margin-top: -71.5px;
+		line-height: 96px;
+		margin-top: -44px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 13px;
-		color: rgba(40,168,109,1);
+		font-size: 8px;
+		color: rgba(26,73,73,1);
 	}
-	#Details_cq {
-		left: 935px;
-		top: 1311px;
+	#Details_cj {
+		left: 1199px;
+		top: 534.071px;
 		position: absolute;
 		overflow: visible;
-		width: 42px;
+		width: 28px;
 		white-space: nowrap;
-		line-height: 156px;
-		margin-top: -71.5px;
+		line-height: 96px;
+		margin-top: -44px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 13px;
-		color: rgba(40,168,109,1);
+		font-size: 8px;
+		color: rgba(26,73,73,1);
 	}
-	#Details_cr {
-		left: 935px;
-		top: 1453px;
+	#See_More {
+		left: 929px;
+		top: 623px;
 		position: absolute;
 		overflow: visible;
-		width: 42px;
+		width: 78px;
 		white-space: nowrap;
-		line-height: 156px;
-		margin-top: -71.5px;
+		line-height: 142px;
+		margin-top: -62.5px;
 		text-align: left;
 		font-family: Rubik;
 		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(40,168,109,1);
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(26,73,73,1);
+		text-decoration: underline;
 	}
 </style>
 <script id="applicationScript">
@@ -1261,7 +1149,7 @@
 ///////////////////////////////////////
 
 /**
- * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page.
  * Code subject to change.
  **/
 
@@ -1380,18 +1268,18 @@ var Application = function() {
 		if (self.initialized==false) {
 			if (self.enableDeepLinking) {
 				self.syncronizeViewToURL();
-			} 
-	
+			}
+
 			if (self.refreshPageForChanges) {
 				self.setupRefreshForChanges();
 			}
-	
+
 			self.initialized = true;
 		}
-		
+
 		if (self.scaleViewsToFit) {
 			self.viewScale = self.scaleViewToFit(view);
-			
+
 			if (self.viewScale<0) {
 				setTimeout(self.scaleViewToFit, 500, view);
 			}
@@ -1404,7 +1292,7 @@ var Application = function() {
 		else {
 			// no view found
 		}
-	
+
 		if (self.showUpdateNotification) {
 			self.showNotification();
 		}
@@ -1415,7 +1303,7 @@ var Application = function() {
 
 
 	///////////////////////////////////////
-	// AUTO REFRESH 
+	// AUTO REFRESH
 	///////////////////////////////////////
 
 	self.setupRefreshForChanges = function() {
@@ -1430,14 +1318,14 @@ var Application = function() {
 	}
 
 	/**
-	 * Attempt to check the last modified date by the headers 
+	 * Attempt to check the last modified date by the headers
 	 * or the last modified property from the byte array (experimental)
 	 **/
 	self.requestRefreshUpdate = function() {
 		var url = document.location.href;
 		var protocol = window.location.protocol;
 		var method;
-		
+
 		try {
 
 			if (self.refreshCheckContentSize) {
@@ -1465,20 +1353,20 @@ var Application = function() {
 
 					self.refreshRequest.onload = self.refreshOnLoadOnceHandler;
 
-					// In some browsers (Chrome & Safari) this error occurs at send: 
-					// 
-					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null' 
-					// has been blocked by CORS policy: 
-					// Cross origin requests are only supported for protocol schemes: 
+					// In some browsers (Chrome & Safari) this error occurs at send:
+					//
+					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null'
+					// has been blocked by CORS policy:
+					// Cross origin requests are only supported for protocol schemes:
 					// http, data, chrome, chrome-extension, https.
-					// 
+					//
 					// Safari - XMLHttpRequest cannot load file:///Users/user/Public/index.html. Cross origin requests are only supported for HTTP.
-					// 
+					//
 					// Solution is to run a local server, set local permissions or test in another browser
 					self.refreshRequest.send(null);
 
-					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date: 
-					// 
+					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date:
+					//
 					// DOM7011: The code on this page disabled back and forward caching.
 
 					// In Brave (Chrome) error when on the server
@@ -1492,7 +1380,7 @@ var Application = function() {
 					self.refreshRequest.ontimeout = function() {
 						self.log("Couldn't find page to check for updates");
 					}
-					
+
 					var method;
 					if (protocol=="file:") {
 						method = "GET";
@@ -1520,8 +1408,8 @@ var Application = function() {
 		try {
 
 			if (self.refreshRequest.readyState === XMLHttpRequest.DONE) {
-				
-				if (self.refreshRequest.status === 2 || 
+
+				if (self.refreshRequest.status === 2 ||
 					self.refreshRequest.status === 200) {
 					var pageChanged = false;
 
@@ -1533,7 +1421,7 @@ var Application = function() {
 						//lastModifiedDate = refreshRequest.getResponseHeader("Last-Modified");
 						var headers = self.refreshRequest.getAllResponseHeaders();
 						var hasContentHeader = headers.indexOf("Content-Length")!=-1;
-						
+
 						if (hasContentHeader) {
 							contentSize = self.refreshRequest.getResponseHeader("Content-Length");
 
@@ -1565,7 +1453,7 @@ var Application = function() {
 
 					}
 
-					
+
 					if (pageChanged) {
 						clearInterval(self.refreshInterval);
 						self.refreshUpdatedPage();
@@ -1628,7 +1516,7 @@ var Application = function() {
 		notification.setAttribute("style", styleRule);
 
 		notification.className= "PageRefreshedClass";
-		
+
 		document.body.appendChild(notification);
 
 		setTimeout(function() {
@@ -1643,7 +1531,7 @@ var Application = function() {
 	}
 
 	/**
-	 * Get the last modified date from the header 
+	 * Get the last modified date from the header
 	 * or file object after request has been received
 	 **/
 	self.getLastModified = function(request) {
@@ -1653,7 +1541,7 @@ var Application = function() {
 		if (request.response && request.response.lastModified) {
 			date = request.response.lastModified;
 		}
-		
+
 		// http protocol - check headers
 		if (date==null) {
 			date = request.getResponseHeader("Last-Modified");
@@ -1664,7 +1552,7 @@ var Application = function() {
 
 	self.updateLastModifiedLabel = function() {
 		var labelValue = "";
-		
+
 		if (self.lastModifiedLabel==null) {
 			self.lastModifiedLabel = document.getElementById("LastModifiedLabel");
 		}
@@ -1690,7 +1578,7 @@ var Application = function() {
 					labelValue += minutes==1 ? " minute" : " minutes";
 				}
 			}
-			
+
 			if (seconds<10) {
 				labelValue = "Updated now";
 			}
@@ -1807,7 +1695,7 @@ var Application = function() {
 	self.getStylesheetRules = function(styleSheet) {
 		try {
 			if (styleSheet) return styleSheet.cssRules || styleSheet.rules;
-	
+
 			return document.styleSheets[0]["cssRules"] || document.styleSheets[0]["rules"];
 		}
 		catch (error) {
@@ -1827,7 +1715,7 @@ var Application = function() {
 	}
 
 	/**
-	 * If single page application hide all of the views. 
+	 * If single page application hide all of the views.
 	 * @param {Number} selectedIndex if provided shows the view at index provided
 	 **/
 	self.hideViews = function(selectedIndex, animation) {
@@ -1855,7 +1743,7 @@ var Application = function() {
 						self.disableMediaQuery(rule);
 					}
 				}
-				
+
 				queryIndex++;
 			}
 		}
@@ -1997,7 +1885,7 @@ var Application = function() {
 		var display = null;
 		var reparent = true;
 		var view = null;
-		
+
 		if (overlay==null || overlay==false) {
 			self.log("Overlay not found, '"+ id + "'");
 			return;
@@ -2022,7 +1910,7 @@ var Application = function() {
 				event.stopImmediatePropagation();
 			}
 		}
-		
+
 		if (self.application==false || targetType=="page") {
 			document.location.href = "./" + actionTargetValue;
 			return;
@@ -2054,9 +1942,9 @@ var Application = function() {
 			//self.setElementAnimation(overlay, null);
 			//overlay.style.animation = animation;
 			self.enableMediaQuery(query);
-			
+
 			var display = overlay && overlay.style.display;
-			
+
 			if (overlay && display=="" || display=="none") {
 				overlay.style.display = "block";
 				//self.setViewOptions(overlay);
@@ -2094,11 +1982,11 @@ var Application = function() {
 		anchorTop = self.getIsStyleDefined(id, "top");
 		anchorBottom = self.getIsStyleDefined(id, "bottom");
 
-		
+
 		if (self.viewsDictionary[overlay.id] && self.viewsDictionary[overlay.id].styleDeclaration) {
 			style = self.viewsDictionary[overlay.id].styleDeclaration.style;
 		}
-		
+
 		if (centerHorizontally) {
 			style.left = "50%";
 			style.transformOrigin = "0 0";
@@ -2113,7 +2001,7 @@ var Application = function() {
 		else {
 			style.left = x + "px";
 		}
-		
+
 		if (centerVertically) {
 			style.top = "50%";
 			transform.push("translateY(-50%)");
@@ -2152,12 +2040,12 @@ var Application = function() {
 
 		if (overlay) {
 			var style = overlay.style;
-			
+
 			if (style.animation && self.supportAnimations && animate) {
 				self.reverseAnimation(overlay, true);
 
 				var duration = self.getAnimationDuration(style.animation, true);
-		
+
 				setTimeout(function() {
 					self.setElementAnimation(overlay, null);
 					self.hideOverlay(overlay);
@@ -2188,10 +2076,10 @@ var Application = function() {
 
 		if (hide) {
 			//target.addEventListener("animationend", self.animationEndHideHandler);
-	
+
 			var duration = self.getAnimationDuration(lastAnimation, true);
 			var isOverlay = self.isOverlay(target);
-	
+
 			setTimeout(function() {
 				self.setElementAnimation(target, null);
 
@@ -2263,7 +2151,7 @@ var Application = function() {
 
 			if (self.scaleViewsToFit) {
 				var newScaleValue = self.scaleViewToFit(view);
-				
+
 				if (newScaleValue<0) {
 					setTimeout(self.scaleViewToFit, 500, view);
 				}
@@ -2304,7 +2192,7 @@ var Application = function() {
 		// loop through rules and hide media queries except selected
 		for (var i=0;i<numberOfRules;i++) {
 			var rule = rules[i];
-			
+
 			if (rule.media!=null) {
 
 				if (queryIndex==prevQueryIndex) {
@@ -2345,7 +2233,7 @@ var Application = function() {
 		// loop through rules and hide media queries except selected
 		for (var i=0;i<numberOfRules;i++) {
 			var rule = rules[i];
-			
+
 			if (rule.media!=null) {
 
 				if (queryIndex==nextQueryIndex) {
@@ -2408,12 +2296,12 @@ var Application = function() {
 		for (var i=0;i<numberOfRules;i++) {
 			if (rules[i].media!=null) { numberOfQueries++; }
 		}
-		
+
 		return numberOfQueries;
 	}
 
 	/////////////////////////////////////////
-	// VIEW SCALE 
+	// VIEW SCALE
 	/////////////////////////////////////////
 
 	self.sliderChangeHandler = function(event) {
@@ -2427,7 +2315,7 @@ var Application = function() {
 		var tooltip = parseInt(scale * 100 + "") + "%";
 		var inputType;
 		var inputValue;
-		
+
 		if (slider) {
 			inputValue = self.getShortNumber(scale * 100);
 			if (inputValue!=slider["value"]) {
@@ -2447,13 +2335,13 @@ var Application = function() {
 	self.viewChangeHandler = function(event) {
 		var view = self.getVisibleView();
 		var matrix = view ? getComputedStyle(view).transform : null;
-		
+
 		if (matrix) {
 			self.viewScale = self.getViewScaleValue(view);
-			
+
 			var scaleNeededToFit = self.getViewFitToViewportScale(view);
 			var isViewLargerThanViewport = scaleNeededToFit<1;
-			
+
 			// scale large view to fit if scale to fit is enabled
 			if (self.scaleViewsToFit) {
 				self.scaleViewToFit(view);
@@ -2478,7 +2366,7 @@ var Application = function() {
 	}
 
 	/**
-	 * Scales view to scale. 
+	 * Scales view to scale.
 	 * @param {Object} view view to scale. views are in views array
 	 * @param {Boolean} scaleToFit set to true to scale to fit. set false to use desired scale value
 	 * @param {Number} desiredScale scale to define. not used if scale to fit is false
@@ -2531,7 +2419,7 @@ var Application = function() {
 		}
 
 		self.updateSliderValue(desiredScale);
-		
+
 		// scale to fit width
 		if (scaleToWidth && scaleToHeight==false) {
 			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
@@ -2576,7 +2464,7 @@ var Application = function() {
 					translateY = "0";
 					topPosition = "0";
 				}
-				
+
 				if (style.top != topPosition) {
 					style.top = topPosition + "";
 				}
@@ -2623,7 +2511,7 @@ var Application = function() {
 			//canCenterHorizontally = scaleNeededToFitHeight<=scaleNeededToFitWidth && enableScaleUp==false;
 			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
 			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
-			
+
 			if (isSliderChange) {
 				canCenterHorizontally = desiredScale<scaleToFitFullHeight;
 			}
@@ -2683,7 +2571,7 @@ var Application = function() {
 					translateY = "0";
 					topPosition = "0";
 				}
-				
+
 				if (style.top != topPosition) {
 					style.top = topPosition + "";
 				}
@@ -2729,7 +2617,7 @@ var Application = function() {
 
 			//canCenterHorizontally = self.canCenterHorizontally(view, "fit", false, desiredScale);
 			//canCenterVertically = self.canCenterVertically(view, "fit", false, desiredScale);
-			
+
 			if (self.centerVertically) {
 				if (canCenterVertically) {
 					translateY = "-50%";
@@ -2739,7 +2627,7 @@ var Application = function() {
 					translateY = "0";
 					topPosition = "0";
 				}
-				
+
 				if (style.top != topPosition) {
 					style.top = topPosition + "";
 				}
@@ -2778,7 +2666,7 @@ var Application = function() {
 			self.viewTop = topPosition;
 
 			self.updateSliderValue(desiredScale);
-			
+
 			return desiredScale;
 		}
 
@@ -2804,7 +2692,7 @@ var Application = function() {
 					translateY = "0";
 					topPosition = "0";
 				}
-				
+
 				if (style.top != topPosition) {
 					style.top = topPosition + "";
 				}
@@ -2847,7 +2735,7 @@ var Application = function() {
 			self.viewTop = topPosition;
 
 			self.updateSliderValue(desiredScale);
-			
+
 			return desiredScale;
 		}
 	}
@@ -2856,8 +2744,8 @@ var Application = function() {
 	 * Returns true if view can be centered horizontally
 	 * @param {HTMLElement} view view
 	 * @param {String} type type of scaling - width, height, all, none
-	 * @param {Boolean} scaleUp if scale up enabled 
-	 * @param {Number} scale target scale value 
+	 * @param {Boolean} scaleUp if scale up enabled
+	 * @param {Number} scale target scale value
 	 */
 	self.canCenterHorizontally = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
 		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
@@ -2871,7 +2759,7 @@ var Application = function() {
 		scaleUp = scaleUp == null ? false : scaleUp;
 
 		if (type=="width") {
-	
+
 			if (scaleUp && maximumScale==null) {
 				canCenter = false;
 			}
@@ -2892,7 +2780,7 @@ var Application = function() {
 					minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
 				}
 			}
-	
+
 			if (scaleUp && maximumScale=="") {
 				canCenter = false;
 			}
@@ -2913,7 +2801,7 @@ var Application = function() {
 		}
 
 		self.horizontalScrollbarsNeeded = canCenter;
-		
+
 		return canCenter;
 	}
 
@@ -2921,8 +2809,8 @@ var Application = function() {
 	 * Returns true if view can be centered horizontally
 	 * @param {HTMLElement} view view to scale
 	 * @param {String} type type of scaling
-	 * @param {Boolean} scaleUp if scale up enabled 
-	 * @param {Number} scale target scale value 
+	 * @param {Boolean} scaleUp if scale up enabled
+	 * @param {Number} scale target scale value
 	 */
 	self.canCenterVertically = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
 		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
@@ -2934,7 +2822,7 @@ var Application = function() {
 		type = type==null ? "none" : type;
 		scale = scale==null ? 1 : scale;
 		scaleUp = scaleUp == null ? false : scaleUp;
-	
+
 		if (type=="width") {
 			canCenter = scaleNeededToFitHeight>=scaleNeededToFitWidth;
 		}
@@ -2955,7 +2843,7 @@ var Application = function() {
 		}
 
 		self.verticalScrollbarsNeeded = canCenter;
-		
+
 		return canCenter;
 	}
 
@@ -2981,7 +2869,7 @@ var Application = function() {
 		else if (elementWidth > availableWidth || elementHeight > availableHeight) {
 			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
 		}
-		
+
 		return newScale;
 	}
 
@@ -3006,7 +2894,7 @@ var Application = function() {
 		else if (elementWidth > availableWidth) {
 			newScale = availableWidth/elementWidth;
 		}
-		
+
 		return newScale;
 	}
 
@@ -3029,22 +2917,22 @@ var Application = function() {
 		else if (elementHeight > availableHeight) {
 			newScale = availableHeight/elementHeight;
 		}
-		
+
 		return newScale;
 	}
 
 	self.keypressHandler = function(event) {
 		var rightKey = 39;
 		var leftKey = 37;
-		
-		// listen for both events 
+
+		// listen for both events
 		if (event.type=="keypress") {
 			window.removeEventListener("keyup", self.keypressHandler);
 		}
 		else {
 			window.removeEventListener("keypress", self.keypressHandler);
 		}
-		
+
 		if (self.showNavigationControls) {
 			if (self.navigationOnKeypress) {
 				if (event.keyCode==rightKey) {
@@ -3102,7 +2990,7 @@ var Application = function() {
 
 	self.getVisibleView = function() {
 		var viewIds = self.getViewIds();
-		
+
 		for (var i=0;i<viewIds.length;i++) {
 			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
 			var view = self.getElement(viewId);
@@ -3111,10 +2999,10 @@ var Application = function() {
 			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
 				view = self.getElement(viewId.replace(postName, ""));
 			}
-			
+
 			if (view) {
 				var display = getComputedStyle(view).display;
-		
+
 				if (display=="block" || display=="flex") {
 					return view;
 				}
@@ -3127,7 +3015,7 @@ var Application = function() {
 	self.getVisibleViews = function() {
 		var viewIds = self.getViewIds();
 		var views = [];
-		
+
 		for (var i=0;i<viewIds.length;i++) {
 			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
 			var view = self.getElement(viewId);
@@ -3136,10 +3024,10 @@ var Application = function() {
 			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
 				view = self.getElement(viewId.replace(postName, ""));
 			}
-			
+
 			if (view) {
 				var display = getComputedStyle(view).display;
-				
+
 				if (display=="none") {
 					continue;
 				}
@@ -3166,10 +3054,10 @@ var Application = function() {
 			for (let index = 0; index < views.length; index++) {
 				var viewId = views[index];
 				var state = self.viewsDictionary[viewId];
-				var rule = state && state.rule; 
+				var rule = state && state.rule;
 				var matchResults = window.matchMedia(rule.conditionText);
 				var view = self.views[viewId];
-				
+
 				if (matchResults.matches) {
 					if (ids==true) {
 						matchingViews.push(viewId);
@@ -3205,7 +3093,7 @@ var Application = function() {
 				var viewStateName = self.getStyleRuleValue(mediaRule, self.STATE_NAME, state);
 				var stateFoundAtt = view.getAttribute(self.STATE_NAME)==state;
 				var matchesResults = false;
-				
+
 				if (viewStateName==stateName) {
 					if (matchQuery) {
 						matchesResults = self.ruleMatchesQuery(rule);
@@ -3250,12 +3138,12 @@ var Application = function() {
 
 		if (self.showByMediaQuery) {
 			var stateName = fragment;
-			
+
 			if (stateName==null || stateName=="") {
 				var initialView = self.getInitialView();
 				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
 			}
-			
+
 			self.showMediaQueryViewsByState(stateName);
 			return;
 		}
@@ -3274,7 +3162,7 @@ var Application = function() {
 				window.history.pushState({name:currentView.id}, null, "#"+ currentView.id);
 			}
 		}
-		
+
 		self.setViewVariables(view);
 		return view;
 	}
@@ -3302,7 +3190,7 @@ var Application = function() {
 		var computedStyle = window.getComputedStyle(view);
 		var value = computedStyle.getPropertyValue(property);
 		var type = typeof value;
-		
+
 		if (value=="true" || (type=="string" && value.indexOf("true")!=-1)) {
 			return true;
 		}
@@ -3319,10 +3207,10 @@ var Application = function() {
 		if (value===undefined) {
 			return defaultValue;
 		}
-		
+
 		value = value.replace(/^[\s\"]*/, "");
 		value = value.replace(/[\s\"]*$/, "");
-		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) {
 			return capture;
 		});
 
@@ -3335,10 +3223,10 @@ var Application = function() {
 		if (value===undefined) {
 			return null;
 		}
-		
+
 		value = value.replace(/^[\s\"]*/, "");
 		value = value.replace(/[\s\"]*$/, "");
-		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) {
 			return capture;
 		});
 
@@ -3348,7 +3236,7 @@ var Application = function() {
 	/**
 	 * Get the first defined value of property. Returns empty string if not defined
 	 * @param {String} id id of element
-	 * @param {String} property 
+	 * @param {String} property
 	 */
 	self.getCSSPropertyValueForElement = function(id, property) {
 		var styleSheets = document.styleSheets;
@@ -3363,19 +3251,19 @@ var Application = function() {
 			var cssRules = self.getStylesheetRules(styleSheet);
 			var numOfCSSRules = cssRules.length;
 			var cssRule;
-			
+
 			for (var j=0;j<numOfCSSRules;j++) {
 				cssRule = cssRules[j];
-				
+
 				if (cssRule.media) {
 					var mediaRules = cssRule.cssRules;
 					var numOfMediaRules = mediaRules ? mediaRules.length : 0;
-					
+
 					for(var k=0;k<numOfMediaRules;k++) {
 						var mediaRule = mediaRules[k];
-						
+
 						if (mediaRule.selectorText==selectorIDText || mediaRule.selectorText==selectorClassText) {
-							
+
 							if (mediaRule.style && mediaRule.style.getPropertyValue(property)!="") {
 								value = mediaRule.style.getPropertyValue(property);
 								values.push(value);
@@ -3411,7 +3299,7 @@ var Application = function() {
 			const view = self.getElement(id);
 			self.views[id] = view;
 		}
-		
+
 		self.viewIds = viewIds;
 	}
 
@@ -3423,13 +3311,13 @@ var Application = function() {
 			const id = viewIds[index];
 			const view = self.getViewById(id);
 			const isOverlay = view && self.isOverlay(view);
-			
+
 			if (isOverlay) {
 				ids.push(id);
 				self.overlays[id] = view;
 			}
 		}
-		
+
 		self.overlayIds = ids;
 	}
 
@@ -3448,21 +3336,21 @@ var Application = function() {
 		var property = self.prefix + "view-id";
 		var stateName = self.prefix + "state";
 		var stateValue;
-		
+
 		for (var j=0;j<numOfCSSRules;j++) {
 			cssRule = cssRules[j];
-			
+
 			if (cssRule.media) {
 				var mediaRules = cssRule.cssRules;
 				var numOfMediaRules = mediaRules ? mediaRules.length : 0;
 				var mediaViewInfoFound = false;
 				var mediaId = null;
-				
+
 				for(var k=0;k<numOfMediaRules;k++) {
 					var mediaRule = mediaRules[k];
 
 					selectorText = mediaRule.selectorText;
-					
+
 					if (selectorText==".mediaViewInfo" && mediaViewInfoFound==false) {
 
 						mediaId = self.getStyleRuleValue(mediaRule, property);
@@ -3470,7 +3358,7 @@ var Application = function() {
 
 						selectorIDText = "#" + mediaId;
 						selectorClassText = "." + mediaId + "_Class";
-						
+
 						// prevent duplicates from load and domcontentloaded events
 						if (self.addedViews.indexOf(mediaId)==-1) {
 							self.addView(mediaId, cssRule, mediaRule, stateValue);
@@ -3496,7 +3384,7 @@ var Application = function() {
 			}
 			else {
 				selectorText = cssRule.selectorText;
-				
+
 				if (selectorText==null) continue;
 
 				selectorText = selectorText.replace(/[#|\s|*]?/g, "");
@@ -3576,7 +3464,7 @@ var Application = function() {
 		var targetState = targetView ? self.getStateNameByViewId(targetView.id) : null;
 		var actionTargetStyles = targetView ? targetView.style : null;
 		var state = self.viewsDictionary[actionTargetValue];
-		
+
 		// navigate to page
 		if (self.application==false || targetType=="page") {
 			document.location.href = "./" + actionTargetValue;
@@ -3592,7 +3480,7 @@ var Application = function() {
 
 			if (self.showByMediaQuery) {
 				var stateName = targetState;
-				
+
 				if (stateName==null || stateName=="") {
 					var initialView = self.getInitialView();
 					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
@@ -3637,7 +3525,7 @@ var Application = function() {
 			var duration = self.getAnimationDuration(animation, true);
 
 			// if target view is above (higher index)
-			// then fade in target view 
+			// then fade in target view
 			// and after fade in then hide previous view instantly
 			if (fromIndex<toIndex) {
 				self.setElementAnimation(from, null);
@@ -3655,7 +3543,7 @@ var Application = function() {
 				}, duration)
 			}
 			// if target view is on bottom
-			// then show target view instantly 
+			// then show target view instantly
 			// and fade out current view
 			else if (fromIndex>toIndex) {
 				self.setElementAnimation(to, null);
@@ -3689,7 +3577,7 @@ var Application = function() {
 		}
 
 		self.setElementAnimation(element, null);
-		
+
 		element.style.animation = animation;
 	}
 
@@ -3760,7 +3648,7 @@ var Application = function() {
 	}
 
 	self.resizeHandler = function(event) {
-		
+
 		if (self.showByMediaQuery) {
 			if (self.enableDeepLinking) {
 				var stateName = self.getHashFragment();
@@ -3775,7 +3663,7 @@ var Application = function() {
 		else {
 			var visibleViews = self.getVisibleViews();
 
-			for (let index = 0; index < visibleViews.length; index++) {	
+			for (let index = 0; index < visibleViews.length; index++) {
 				var view = visibleViews[index];
 				self.scaleViewIfNeeded(view);
 			}
@@ -3839,8 +3727,8 @@ var Application = function() {
 		// but if multiple views exists at same size user may want specific view
 		// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
 		// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
-		// if no state is defined show view 
-		// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
+		// if no state is defined show view
+		// an viewChanging event is dispatched before views are shown or hidden that can be prevented
 
 		// get all matched queries
 		// if state name is specified then show that view and hide other views
@@ -3851,10 +3739,10 @@ var Application = function() {
 		var showViews = [];
 		var hideViews = [];
 
-		// loop views that match media query 
+		// loop views that match media query
 		for (let index = 0; index < matchedViews.length; index++) {
 			var view = matchedViews[index];
-			
+
 			// let user determine visible view
 			if (self.showStateFunction!=null) {
 				if (self.showStateFunction(view, state)) {
@@ -3916,7 +3804,7 @@ var Application = function() {
 			viewChangeEvent.hideViews = hideViews;
 			window.dispatchEvent(viewChangeEvent);
 		}
-		
+
 	}
 
 	self.clearDisplay = function(view) {
@@ -3942,7 +3830,7 @@ var Application = function() {
 				self.showView(view);
 				self.setViewVariables(view);
 				self.updateViewLabel();
-				
+
 				window.dispatchEvent(new Event(self.VIEW_CHANGE));
 			}
 			else {
@@ -3990,7 +3878,7 @@ var Application = function() {
 		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
 			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
 			var isScaled = false;
-			
+
 			// if scale is not 1 then view needs scaling
 			if (scaleNeededToFit!=1) {
 
@@ -4007,14 +3895,14 @@ var Application = function() {
 				}
 			}
 			else {
-				// view is smaller than viewport 
+				// view is smaller than viewport
 				// so scale to fit() is scale actual size
 				// actual size and scaled size are the same
 				// but call scale to fit to retain centering
 				self.scaleViewToFit(view);
 				isScaled = false;
 			}
-			
+
 			view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
 			isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
 		}
@@ -4046,25 +3934,25 @@ var Application = function() {
 
 	self.getStackArray = function(error) {
 		var value = "";
-		
+
 		if (error==null) {
 		  try {
 			 error = new Error("Stack");
 		  }
 		  catch (e) {
-			 
+
 		  }
 		}
-		
+
 		if ("stack" in error) {
 		  value = error.stack;
 		  var methods = value.split(/\n/g);
-	 
+
 		  var newArray = methods ? methods.map(function (value, index, array) {
 			 value = value.replace(/\@.*/,"");
 			 return value;
 		  }) : null;
-	 
+
 		  if (newArray && newArray[0].includes("getStackTrace")) {
 			 newArray.shift();
 		  }
@@ -4074,17 +3962,17 @@ var Application = function() {
 		  if (newArray && newArray[0]=="") {
 			 newArray.shift();
 		  }
-	 
+
 			return newArray;
 		}
-		
+
 		return null;
 	}
 
 	self.log = function(value) {
 		console.log.apply(this, [value]);
 	}
-	
+
 	// initialize on load
 	// sometimes the body size is 0 so we call this now and again later
 	window.addEventListener("load", self.onloadHandler);
@@ -4095,67 +3983,92 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="SavedResults">
+<div id="results">
 	<svg class="Rectangle_1">
-		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1095" height="1616">
-		</rect>
-	</svg>
-	<svg class="Rectangle_3">
-		<rect id="Rectangle_3" rx="61" ry="61" x="0" y="0" width="1022" height="894">
-		</rect>
-	</svg>
-	<svg class="Rectangle_23">
-		<rect id="Rectangle_23" rx="34" ry="34" x="0" y="0" width="221" height="133">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="448" height="666">
 		</rect>
 	</svg>
 	<img id="Logo-01" src="Logo-01.png" srcset="Logo-01.png 1x, Logo-01@2x.png 2x">
-		
-	<div id="Results">
-		<span>Results</span>
+
+	<svg class="Line_1" viewBox="0 0 382 1">
+		<path id="Line_1" d="M 0 0 L 382 0">
+		</path>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect id="Rectangle_3" rx="15" ry="15" x="0" y="0" width="125" height="30">
+		</rect>
+	</svg>
+	<svg class="Rectangle_15">
+		<rect id="Rectangle_15" rx="15" ry="15" x="0" y="0" width="125" height="30">
+		</rect>
+	</svg>
+	<div id="Save">
+		<span>Save</span>
+	</div>
+	<div id="Done">
+		<span>Done</span>
+	</div>
+	<div id="Back">
+		<span>Back</span>
+	</div>
+	<div id="Plant_Name_">
+		<span>Plant Name :</span>
+	</div>
+	<div id="All_Results">
+		<span>All Results</span>
+	</div>
+	<div id="Condition_">
+		<span>Condition :</span>
+	</div>
+	<div id="Disease_Name_">
+		<span>Disease Name :</span>
+	</div>
+	<div id="Medicine_">
+		<span>Medicine :</span>
+	</div>
+	<div id="Precautions_">
+		<span>Precautions :</span>
+	</div>
+	<div id="Dummy_name">
+		<span>Dummy name</span>
+	</div>
+	<div id="Healthy__Not_Healthy">
+		<span>Healthy / Not Healthy</span>
+	</div>
+	<div id="Lorem_Ipsum">
+		<span>Lorem Ipsum</span>
+	</div>
+	<div id="Lorem_Ipsum_Dummy_Medicine_">
+		<span>Lorem Ipsum, Dummy Medicine, </span>
+	</div>
+	<div id="In_publishing_and_graphic_desi">
+		<span>In publishing and graphic design, Lorem <br/>ipsum is a placeholder text commonly <br/>used to demonstrate the visual form of <br/>a document or a typeface.</span>
 	</div>
 	<div id="Plant_Name">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_s">
+	<div id="Plant_Name_ba">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_t">
+	<div id="Plant_Name_bb">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_u">
+	<div id="Plant_Name_bc">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_v">
+	<div id="Plant_Name_bd">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_w">
+	<div id="Plant_Name_be">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_x">
+	<div id="Plant_Name_bf">
 		<span>Plant Name</span>
 	</div>
-	<div id="Plant_Name_y">
-		<span>Plant Name</span>
-	</div>
-	<div id="Plant_Name_z">
-		<span>Plant Name</span>
-	</div>
-	<div id="Plant_Name_">
+	<div id="Plant_Name_bg">
 		<span>Plant Name</span>
 	</div>
 	<div id="Condition">
-		<span>Condition</span>
-	</div>
-	<div id="Condition_">
-		<span>Condition</span>
-	</div>
-	<div id="Condition_ba">
-		<span>Condition</span>
-	</div>
-	<div id="Condition_bb">
-		<span>Condition</span>
-	</div>
-	<div id="Condition_bc">
 		<span>Condition</span>
 	</div>
 	<div id="Condition_bd">
@@ -4173,77 +4086,52 @@ window.application = new Application();
 	<div id="Condition_bh">
 		<span>Condition</span>
 	</div>
-	<svg class="Line_1" viewBox="0 0 922.278 2">
-		<path id="Line_1" d="M 0 0 L 922.2779541015625 0">
-		</path>
-	</svg>
-	<svg class="Line_8" viewBox="0 0 922.278 2">
-		<path id="Line_8" d="M 0 0 L 922.2779541015625 0">
-		</path>
-	</svg>
-	<svg class="Line_9" viewBox="0 0 922.278 2">
-		<path id="Line_9" d="M 0 0 L 922.2779541015625 0">
-		</path>
-	</svg>
-	<svg class="Line_10" viewBox="0 0 922.278 2">
-		<path id="Line_10" d="M 0 0 L 922.2779541015625 0">
-		</path>
-	</svg>
-	<svg class="Line_11" viewBox="0 0 922.278 2">
-		<path id="Line_11" d="M 0 0 L 922.2779541015625 0">
-		</path>
-	</svg>
-	<img id="Mask_Group_2" src="Mask_Group_2.png" srcset="Mask_Group_2.png 1x, Mask_Group_2@2x.png 2x">
-		
-	</svg>
-	<div onclick="application.goToTargetView(event)" id="Back">
-		<span>Back</span>
+	<div id="Condition_bi">
+		<span>Condition</span>
 	</div>
-	<svg class="Line_7" viewBox="0 0 62.438 3">
-		<path id="Line_7" d="M 0 0 L 62.4376335144043 0">
+	<div id="Condition_bj">
+		<span>Condition</span>
+	</div>
+	<svg class="Line_2" viewBox="0 0 591.124 2">
+		<path id="Line_2" d="M 0 0 L 591.1244506835938 0">
+		</path>
+	</svg>
+	<svg class="Line_8" viewBox="0 0 591.124 2">
+		<path id="Line_8" d="M 0 0 L 591.1244506835938 0">
+		</path>
+	</svg>
+	<svg class="Line_9" viewBox="0 0 591.124 2">
+		<path id="Line_9" d="M 0 0 L 591.1244506835938 0">
+		</path>
+	</svg>
+	<svg class="Line_10" viewBox="0 0 591.124 2">
+		<path id="Line_10" d="M 0 0 L 591.1244506835938 0">
 		</path>
 	</svg>
 	<svg class="Ellipse_6">
-		<ellipse id="Ellipse_6" rx="58" ry="58" cx="58" cy="58">
+		<ellipse id="Ellipse_6" rx="37" ry="37.5" cx="37" cy="37.5">
 		</ellipse>
 	</svg>
 	<svg class="Ellipse_7">
-		<ellipse id="Ellipse_7" rx="58" ry="58" cx="58" cy="58">
+		<ellipse id="Ellipse_7" rx="37" ry="37.5" cx="37" cy="37.5">
 		</ellipse>
 	</svg>
 	<svg class="Ellipse_8">
-		<ellipse id="Ellipse_8" rx="58" ry="58.5" cx="58" cy="58.5">
+		<ellipse id="Ellipse_8" rx="37" ry="37.5" cx="37" cy="37.5">
 		</ellipse>
 	</svg>
 	<svg class="Ellipse_9">
-		<ellipse id="Ellipse_9" rx="58" ry="58" cx="58" cy="58">
+		<ellipse id="Ellipse_9" rx="37" ry="37.5" cx="37" cy="37.5">
 		</ellipse>
-	</svg>
-	<svg class="Ellipse_10">
-		<ellipse id="Ellipse_10" rx="58" ry="58" cx="58" cy="58">
-		</ellipse>
-	</svg>
-	<div id="See_More">
-		<span>See More</span>
-	</div>
-	<svg class="Line_12" viewBox="0 0 119.825 3">
-		<path id="Line_12" d="M 0 0 L 119.8246765136719 0">
-		</path>
 	</svg>
 	<img id="image-gallery" src="image-gallery.png" srcset="image-gallery.png 1x, image-gallery@2x.png 2x">
-		
-	<img id="image-gallery_br" src="image-gallery_br.png" srcset="image-gallery_br.png 1x, image-gallery_br@2x.png 2x">
-		
-	<img id="image-gallery_bs" src="image-gallery_bs.png" srcset="image-gallery_bs.png 1x, image-gallery_bs@2x.png 2x">
-		
+
 	<img id="image-gallery_bt" src="image-gallery_bt.png" srcset="image-gallery_bt.png 1x, image-gallery_bt@2x.png 2x">
-		
+
 	<img id="image-gallery_bu" src="image-gallery_bu.png" srcset="image-gallery_bu.png 1x, image-gallery_bu@2x.png 2x">
-		
-	<svg class="Rectangle_31">
-		<rect id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="1079" height="377">
-		</rect>
-	</svg>
+
+	<img id="image-gallery_bv" src="image-gallery_bv.png" srcset="image-gallery_bv.png 1x, image-gallery_bv@2x.png 2x">
+
 	<div id="Disease">
 		<span>Disease</span>
 	</div>
@@ -4268,16 +4156,6 @@ window.application = new Application();
 	<div id="Disease_cc">
 		<span>Disease</span>
 	</div>
-	<div id="Disease_cd">
-		<span>Disease</span>
-	</div>
-	<div id="Disease_ce">
-		<span>Disease</span>
-	</div>
-	<svg class="Rectangle_24">
-		<rect id="Rectangle_24" rx="34" ry="34" x="0" y="0" width="221" height="133">
-		</rect>
-	</svg>
 	<div id="Medicine">
 		<span>Medicine</span>
 	</div>
@@ -4302,49 +4180,36 @@ window.application = new Application();
 	<div id="Medicine_cf">
 		<span>Medicine</span>
 	</div>
-	<div id="Medicine_cg">
-		<span>Medicine</span>
-	</div>
-	<div id="Medicine_ch">
-		<span>Medicine</span>
-	</div>
-	<div id="Saved_Results">
-		<span>Saved Results</span>
-	</div>
-	<svg class="Rectangle_26">
-		<rect id="Rectangle_26" rx="15.5" ry="15.5" x="0" y="0" width="87" height="31">
+	<svg class="Rectangle_17">
+		<rect id="Rectangle_17" rx="9.5" ry="9.5" x="0" y="0" width="55" height="19">
 		</rect>
 	</svg>
-	<svg class="Rectangle_27">
-		<rect id="Rectangle_27" rx="16" ry="16" x="0" y="0" width="87" height="32">
+	<svg class="Rectangle_18">
+		<rect id="Rectangle_18" rx="9.5" ry="9.5" x="0" y="0" width="55" height="19">
 		</rect>
 	</svg>
-	<svg class="Rectangle_28">
-		<rect id="Rectangle_28" rx="15.5" ry="15.5" x="0" y="0" width="87" height="31">
+	<svg class="Rectangle_19">
+		<rect id="Rectangle_19" rx="9.5" ry="9.5" x="0" y="0" width="55" height="19">
 		</rect>
 	</svg>
-	<svg class="Rectangle_29">
-		<rect id="Rectangle_29" rx="16.5" ry="16.5" x="0" y="0" width="87" height="33">
-		</rect>
-	</svg>
-	<svg class="Rectangle_30">
-		<rect id="Rectangle_30" rx="16.5" ry="16.5" x="0" y="0" width="87" height="33">
+	<svg class="Rectangle_20">
+		<rect id="Rectangle_20" rx="9.5" ry="9.5" x="0" y="0" width="55" height="19">
 		</rect>
 	</svg>
 	<div id="Details">
 		<span>Details</span>
 	</div>
-	<div id="Details_co">
+	<div id="Details_ch">
 		<span>Details</span>
 	</div>
-	<div id="Details_cp">
+	<div id="Details_ci">
 		<span>Details</span>
 	</div>
-	<div id="Details_cq">
+	<div id="Details_cj">
 		<span>Details</span>
 	</div>
-	<div id="Details_cr">
-		<span>Details</span>
+	<div id="See_More">
+		<span>See More</span>
 	</div>
 </div>
 </body>

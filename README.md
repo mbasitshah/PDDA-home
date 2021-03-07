@@ -5,6 +5,7 @@ There will be provided a video and documentation for new users that will help th
 This application is developed using python and image processing techniques. Its GUI is designed using HTML, CSS and python will be used to design algorithms and for other functionalities.
 
 **Languages:**
+
 •	Python
 •	HTML
 •	CSS
@@ -13,6 +14,7 @@ This application is developed using python and image processing techniques. Its 
 
 
 **How It Works?**
+
 As we have designed GUI part of this project yet. Proper integration and algorithms will be done later. 
 Plant-Disease-Detection contains four main directories at this time.
 1.	mypdda
@@ -33,6 +35,7 @@ Following files are placed in this directory
 In this directory, all CSS files, java files, and assets/images are placed. These are accessed in HTML files.  
 
 **Databases:**
+
 SQLlite3:
 SQLite3 is a very easy to use database engine. It is self-contained, serverless, zero-configuration and transactional. It is very fast and lightweight, and the entire database is stored in a single disk file. ... The Python Standard Library includes a module called "sqlite3" intended for working with this database.
 For now, sqllite3 database is used that is provided by python.
@@ -43,6 +46,7 @@ We have gathered datasets for different plants and these datasets can not be pla
 
 
 **How To Run Using CMD?**
+
 •	Open command prompt.
 •	Go to directory where you saved the project
 •	Write the following commands to run this project
@@ -52,6 +56,7 @@ o	python manage.py runserver
 
 
 **Softwares:**
+
 •	Python (Need to download and install in the system)
 •	Django Framework (Need to install in your project)
 •	Code editor (Pycharm, Sublime, Atom, Vs) any editor can be used.

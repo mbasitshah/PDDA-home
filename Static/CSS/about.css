@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>about</title>
-<style id="applicationStylesheet" type="text/css">
+
 	.mediaViewInfo {
 		--web-view-name: about;
 		--web-view-id: about;
@@ -160,38 +153,3 @@
 		top: 507.151px;
 		overflow: visible;
 	}
-</style>
-
-</head>
-<body>
-<div id="about">
-	<div id="About_PDDA">
-		<span>About PDDA</span>
-	</div>
-	<div id="Lorem_Ipsum_is_simply_dummy_te">
-		<span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since<br/> the 1500s, when an unknown printer to ok a galley of type and scrambled it to make a type specimen the book. It has survived not only five centuries, <br/>but also the leap in into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets <br/>containing Lorem Ipsum passages, and more recently with  desktop publishing software like Aldus psum.</span>
-	</div>
-	<div id="Lorem_Ipsum_is_simply_dummy_te_n">
-		<span>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since<br/> the 1500s, when an unknown printer to ok a galley of type and scrambled it to make a type specimen the book. It has survived not only five centuries, <br/>but also the leap in into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets <br/>containing Lorem Ipsum passages, and more recently with  desktop publishing software like Aldus psum. to the point thing is that this is just dummy <br/>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since<br/> the 1500s, when an unknown printer to ok a galley of type and scrambled it to make a type specimen the book. It has survived not only five centuries, <br/>but also the leap in into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets <br/>containing Lorem Ipsum passages, and more recently with  desktop publishing software like Aldus psum.</span><br>
-	</div>
-	<div id="Email">
-		<span>Email:</span>
-	</div>
-	<div id="abc344gmailcom">
-		<span>abc344@gmail.com</span>
-	</div>
-	<svg class="Line_11" viewBox="0 0 951.473 2">
-		<path id="Line_11" d="M 0 0 L 951.4732055664063 0">
-		</path>
-	</svg>
-	<div id="Phone">
-		<span>Phone:</span>
-	</div>
-	<div id="ID92_3403882654">
-		<span>+92 3403882654</span>
-	</div>
-	<img id="Logo-01" src="Logo-01.png" srcset="Logo-01.png 1x, Logo-01@2x.png 2x">
-
-</div>
-</body>
-</html>

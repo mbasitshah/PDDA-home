@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
 
+from Plant-Disease-Detection import settings
 from mypdda import views
 
 urlpatterns = [
@@ -28,3 +30,4 @@ urlpatterns = [
     path('Help', views.help),
     path('admin/', admin.site.urls),
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

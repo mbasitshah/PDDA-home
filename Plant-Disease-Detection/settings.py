@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PDDA.urls'
+ROOT_URLCONF = 'Plant-Disease-Detection.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PDDA.wsgi.application'
+WSGI_APPLICATION = 'Plant-Disease-Detection.wsgi.application'
 
 
 # Database
@@ -115,11 +115,14 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'Static')
+    os.path.join(BASE_DIR, 'static')
 ]
+MEDIA_URL = '/Assets/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/Assets')

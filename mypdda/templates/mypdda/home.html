@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
+{% load static %}
+{% block content  %}
 <html>
-<head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>home</title>
+ <head>
+   <meta charset="utf-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{% load static %}
-
-<style>
+		<title>home</title>
+ <style>
 
 	.mediaViewInfo {
 		--web-view-name: home;
@@ -409,16 +410,16 @@
 		font-size: 22px;
 		color: rgba(104,104,104,1);
 	}
-</style>
+ </style>
 
-</head>
+ </head>
 <body>
 <div id="home">
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="448" height="666">
 		</rect>
 	</svg>
-	<img id="Logo-01" src="{%static 'Assets/Logo-01.png' %}" srcset="Logo-01.png 1x, Logo-01@2x.png 2x">
+	<img id="Logo-01" src="{% static 'Assets/Logo-01.png' %}" srcset="Logo-01.png 1x, Logo-01@2x.png 2x">
 
 	<div id="Gallery">
 		<span>Gallery</span>
@@ -427,7 +428,7 @@
 		<ellipse id="Ellipse_1" rx="41" ry="40.5" cx="41" cy="40.5">
 		</ellipse>
 	</svg>
-	<img id="image-gallery" src="image-gallery.png" srcset="image-gallery.png 1x, image-gallery@2x.png 2x">
+	<img id="image-gallery" src="{% static 'Assets/image-gallery.png' %}" srcset="image-gallery.png 1x, image-gallery@2x.png 2x">
 
 	<svg class="Line_1" viewBox="0 0 382 1">
 		<path id="Line_1" d="M 0 0 L 382 0">
@@ -440,7 +441,7 @@
 		<ellipse id="Ellipse_3" rx="41" ry="40.5" cx="41" cy="40.5">
 		</ellipse>
 	</svg>
-	<img id="clipboard" src="clipboard.png" srcset="clipboard.png 1x, clipboard@2x.png 2x">
+	<img id="clipboard" src="{% static 'Assets/clipboard.png' %}" srcset="clipboard.png 1x, clipboard@2x.png 2x">
 
 	<div id="Results">
 		<span>Results</span>
@@ -449,13 +450,13 @@
 		<ellipse id="Ellipse_2" rx="41" ry="41" cx="41" cy="41">
 		</ellipse>
 	</svg>
-	<img id="data-analytics" src="data-analytics.png" srcset="data-analytics.png 1x, data-analytics@2x.png 2x">
+	<img id="data-analytics" src="{% static 'Assets/data-analytics.png' %}" srcset="data-analytics.png 1x, data-analytics@2x.png 2x">
 
 	<svg class="Ellipse_4">
 		<ellipse id="Ellipse_4" rx="41" ry="40.5" cx="41" cy="40.5">
 		</ellipse>
 	</svg>
-	<img id="help" src="help.png" srcset="help.png 1x, help@2x.png 2x">
+	<img id="help" src="{% static 'Assets/help.png' %}" srcset="help.png 1x, help@2x.png 2x">
 
 	<div id="Help_z">
 		<span>Help</span>
@@ -467,7 +468,7 @@
 		<ellipse id="Ellipse_5" rx="41" ry="40" cx="41" cy="40">
 		</ellipse>
 	</svg>
-	<img id="businessman-talking-about-data" src="businessman-talking-about-data.png" srcset="businessman-talking-about-data.png 1x, businessman-talking-about-data@2x.png 2x">
+	<img id="businessman-talking-about-data" src="{% static 'Assets/businessman-talking-about-data.png' %}" srcset="businessman-talking-about-data.png 1x, businessman-talking-about-data@2x.png 2x">
 
 	<svg class="Rectangle_2">
 		<rect id="Rectangle_2" rx="37" ry="37" x="0" y="0" width="435" height="230">
@@ -480,7 +481,7 @@
 	<div id="Progress">
 		<span>Progress</span>
 	</div>
-	<img id="image-gallery_" src="image-gallery_.png" srcset="image-gallery_.png 1x, image-gallery_@2x.png 2x">
+	<img id="image-gallery_" src="{% static 'Assets/image-gallery_.png' %}" srcset="image-gallery_.png 1x, image-gallery_@2x.png 2x">
 
 	<svg class="Rectangle_3">
 		<rect id="Rectangle_3" rx="25" ry="25" x="0" y="0" width="230" height="50">
@@ -502,3 +503,4 @@
 </div>
 </body>
 </html>
+{% endblock content %}
